@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.cgi.demo1</groupId>
+  <artifactId>demo1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Demo1</name>
+  <dependencies>
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.3.5</version>
+    <scope>compile</scope>
+</dependency>
+   <groupId>commons-lang</groupId>
+    <artifactId>commons-lang</artifactId>
+    <version>2.6</version>
+    <scope>compile</scope>
+<!-- Source: https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.openrewrite.maven</groupId>
+				<artifactId>rewrite-maven-plugin</artifactId>
+				<version>6.44.0</version>
+				<configuration>
+					<activeRecipes>
+						<recipe>com.yourcompany.UpgradeCommonsLang</recipe>
+					</activeRecipes>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.openrewrite.recipe</groupId>
+						<artifactId>rewrite-apache</artifactId>
+						<version>2.28.0</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+</project>

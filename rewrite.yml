@@ -1,0 +1,7 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.yourcompany.UpgradeCommonsLang
+displayName: Upgrade Apache Commons Lang 2 to 3
+description: Upgrades Apache Commons Lang dependency from version 2 to 3 and modifies source imports.
+recipeList:
+  - org.openrewrite.apache.commons.lang.UpgradeApacheCommonsLang_2_3
