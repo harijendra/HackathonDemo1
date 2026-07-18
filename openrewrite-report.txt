@@ -1,0 +1,30 @@
+=== OPENREWRITE RUN DIAGNOSTIC REPORT ===
+Date: 2026-07-18T13:56:30.744Z
+
+Running pre-configured OpenRewrite recipe...
+Command: mvn rewrite:runNoFork -Dmaven.compiler.failOnError=false -Dmaven.test.skip=true
+
+=== EXECUTION FAILED ===
+Error: Command failed: mvn rewrite:runNoFork -Dmaven.compiler.failOnError=false -Dmaven.test.skip=true
+
+
+=== STDOUT ===
+[INFO] Scanning for projects...
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[ERROR] Malformed POM C:\Users\HACKAT~1\AppData\Local\Temp\2\pr-clone-Sr2jcp\pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...<dependencies>\n\n   <groupId>... @9:13)  @ C:\Users\HACKAT~1\AppData\Local\Temp\2\pr-clone-Sr2jcp\pom.xml, line 9, column 13
+ @ 
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project com.cgi.demo1:demo1:0.0.1-SNAPSHOT (C:\Users\HACKAT~1\AppData\Local\Temp\2\pr-clone-Sr2jcp\pom.xml) has 1 error
+[ERROR]     Malformed POM C:\Users\HACKAT~1\AppData\Local\Temp\2\pr-clone-Sr2jcp\pom.xml: Unrecognised tag: 'groupId' (position: START_TAG seen ...<dependencies>\n\n   <groupId>... @9:13)  @ C:\Users\HACKAT~1\AppData\Local\Temp\2\pr-clone-Sr2jcp\pom.xml, line 9, column 13 -> [Help 2]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException
+
+
+=== STDERR ===
+
