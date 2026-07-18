@@ -1,0 +1,19 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.security.RemediateApacheStack
+displayName: Upgrade Apache Components and Migrate Commons-Lang
+recipeList:
+  - org.openrewrite.maven.UpgradeDependencyVersion:
+      groupId: org.apache.httpcomponents
+      artifactId: httpclient
+      newVersion: 4.5.14
+  - org.openrewrite.maven.UpgradeDependencyVersion:
+      groupId: org.apache.httpcomponents
+      artifactId: httpcore
+      newVersion: 4.4.16
+  - org.openrewrite.java.migrate.lang.UpgradeCommonsLang2To3:
+      # This recipe automates the refactoring of package names from lang to lang3
+  - org.openrewrite.maven.ChangeParentPom:
+      newGroupId: org.springframework.boot
+      newArtifactId: spring-boot-starter-parent
+      newVersion: 3.3.0
