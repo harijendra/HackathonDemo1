@@ -1,0 +1,72 @@
+=== OPENREWRITE RUN DIAGNOSTIC REPORT ===
+Date: 2026-07-18T11:31:40.405Z
+
+Running pre-configured OpenRewrite recipe...
+Command: mvn rewrite:runNoFork -Dmaven.compiler.failOnError=false -Dmaven.test.skip=true
+
+=== EXECUTION FAILED ===
+Error: Command failed: mvn rewrite:runNoFork -Dmaven.compiler.failOnError=false -Dmaven.test.skip=true
+
+
+=== STDOUT ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.cgi.demo1:demo1 >-------------------------
+[INFO] Building Demo1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- rewrite:6.44.0:runNoFork (default-cli) @ demo1 ---
+[INFO] Using active recipe(s) [com.remediation.UpgradeCommonsLang2to3]
+[INFO] Using active styles(s) []
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.289 s
+[INFO] Finished at: 2026-07-18T11:31:51Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.openrewrite.maven:rewrite-maven-plugin:6.44.0:runNoFork (default-cli) on project demo1: Execution default-cli of goal org.openrewrite.maven:rewrite-maven-plugin:6.44.0:runNoFork failed: Recipe(s) not found: com.remediation.UpgradeCommonsLang2to3
+[ERROR] Did you mean: com.yourcompany.UpgradeCommonsLang
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+
+
+=== STDERR ===
+
+Running custom generated recipe...
+Command: mvn org.openrewrite.maven:rewrite-maven-plugin:runNoFork -Drewrite.configLocation="rewrite.yml" -Drewrite.activeRecipes="com.remediation.UpgradeCommonsLang2to3" -Dmaven.compiler.failOnError=false -Dmaven.test.skip=true
+Recipe Name: com.remediation.UpgradeCommonsLang2to3
+
+=== STDOUT ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.cgi.demo1:demo1 >-------------------------
+[INFO] Building Demo1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- rewrite:6.44.0:runNoFork (default-cli) @ demo1 ---
+[INFO] Using active recipe(s) [com.remediation.UpgradeCommonsLang2to3]
+[INFO] Using active styles(s) []
+[INFO] Validating active recipes...
+[ERROR] Recipe validation error in com.remediation.UpgradeCommonsLang2to3 for property org.openrewrite.java.dependencies.ChangeDependencyGroupIdAndArtifactId: Recipe class org.openrewrite.java.dependencies.ChangeDependencyGroupIdAndArtifactId cannot be found
+[ERROR] Recipe validation errors detected as part of one or more activeRecipe(s). Execution will continue regardless.
+[INFO] Project [Demo1] Resolving Poms...
+[INFO] Project [Demo1] Parsing source files
+[INFO] Running recipe(s)...
+[WARNING] Changes have been made to src\main\java\demo1\Demo.java by:
+[WARNING]     org.openrewrite.java.ChangePackage: {oldPackageName=org.apache.commons.lang, newPackageName=org.apache.commons.lang3, recursive=true}
+[WARNING] Please review and commit the results.
+[WARNING] Estimate time saved: 5m
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.389 s
+[INFO] Finished at: 2026-07-18T11:32:09Z
+[INFO] ------------------------------------------------------------------------
+
