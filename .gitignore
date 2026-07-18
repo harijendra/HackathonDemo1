@@ -1,0 +1,8 @@
+
+# Automatically ignored build outputs by Security Orchestrator Agent
+/target/
+/build/
+/.gradle/
+/out/
+*.class
+*.log

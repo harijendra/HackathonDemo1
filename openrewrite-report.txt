@@ -1,0 +1,128 @@
+=== OPENREWRITE RUN DIAGNOSTIC REPORT ===
+Date: 2026-07-18T11:08:54.994Z
+
+Running pre-configured OpenRewrite recipe...
+Command: mvn rewrite:run
+
+=== EXECUTION FAILED ===
+Error: Command failed: mvn rewrite:run
+
+
+=== STDOUT ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.cgi.demo1:demo1 >-------------------------
+[INFO] Building Demo1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> rewrite:6.44.0:run (default-cli) > process-test-classes @ demo1 >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ demo1 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\HACKAT~1\AppData\Local\Temp\2\pr-clone-V8mbTH\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ demo1 ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding windows-1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target\classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] 1 warning
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-V8mbTH/src/main/java/demo1/Demo.java:[3,31] package org.apache.commons.lang does not exist
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-V8mbTH/src/main/java/demo1/Demo.java:[10,13] cannot find symbol
+  symbol:   variable StringUtils
+  location: class demo1.Demo
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.730 s
+[INFO] Finished at: 2026-07-18T11:08:59Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile (default-compile) on project demo1: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-V8mbTH/src/main/java/demo1/Demo.java:[3,31] package org.apache.commons.lang does not exist
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-V8mbTH/src/main/java/demo1/Demo.java:[10,13] cannot find symbol
+[ERROR]   symbol:   variable StringUtils
+[ERROR]   location: class demo1.Demo
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+
+=== STDERR ===
+
+Running custom generated recipe...
+Command: mvn org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.configLocation="rewrite.yml" -Drewrite.activeRecipes="com.org.remediation.UpgradeCommonsLang"
+Recipe Name: com.org.remediation.UpgradeCommonsLang
+
+=== EXECUTION FAILED ===
+Error: Command failed: mvn org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.configLocation="rewrite.yml" -Drewrite.activeRecipes="com.org.remediation.UpgradeCommonsLang"
+
+
+=== STDOUT ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.cgi.demo1:demo1 >-------------------------
+[INFO] Building Demo1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> rewrite:6.44.0:run (default-cli) > process-test-classes @ demo1 >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ demo1 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\HACKAT~1\AppData\Local\Temp\2\pr-clone-V8mbTH\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ demo1 ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding windows-1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target\classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] 1 warning
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-V8mbTH/src/main/java/demo1/Demo.java:[3,31] package org.apache.commons.lang does not exist
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-V8mbTH/src/main/java/demo1/Demo.java:[10,13] cannot find symbol
+  symbol:   variable StringUtils
+  location: class demo1.Demo
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.777 s
+[INFO] Finished at: 2026-07-18T11:09:03Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile (default-compile) on project demo1: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-V8mbTH/src/main/java/demo1/Demo.java:[3,31] package org.apache.commons.lang does not exist
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-V8mbTH/src/main/java/demo1/Demo.java:[10,13] cannot find symbol
+[ERROR]   symbol:   variable StringUtils
+[ERROR]   location: class demo1.Demo
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+
+=== STDERR ===
+

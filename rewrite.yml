@@ -1,7 +1,33 @@
 ---
 type: specs.openrewrite.org/v1beta/recipe
-name: com.yourcompany.UpgradeCommonsLang
-displayName: Upgrade Apache Commons Lang 2 to 3
-description: Upgrades Apache Commons Lang dependency from version 2 to 3 and modifies source imports.
+name: com.org.remediation.UpgradeCommonsLang
+displayName: Upgrade commons-lang 2.x to commons-lang3
+description: Refactors legacy commons-lang imports to commons-lang3 and updates dependency coordinates.
+
 recipeList:
-  - org.openrewrite.apache.commons.lang.UpgradeApacheCommonsLang_2_3
+  - org.openrewrite.java.dependencies.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: commons-lang
+      oldArtifactId: commons-lang
+      newGroupId: org.apache.commons
+      newArtifactId: commons-lang3
+      newVersion: 3.17.0
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: org.apache.commons.lang
+      newPackageName: org.apache.commons.lang3
+      recursive: true
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: org.apache.commons.lang.builder
+      newPackageName: org.apache.commons.lang3.builder
+      recursive: true
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: org.apache.commons.lang.exception
+      newPackageName: org.apache.commons.lang3.exception
+      recursive: true
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: org.apache.commons.lang.reflect
+      newPackageName: org.apache.commons.lang3.reflect
+      recursive: true
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: org.apache.commons.lang.time
+      newPackageName: org.apache.commons.lang3.time
+      recursive: true
