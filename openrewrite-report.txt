@@ -1,0 +1,61 @@
+=== OPENREWRITE RUN DIAGNOSTIC REPORT ===
+Date: 2026-07-18T11:39:09.912Z
+
+Running pre-configured OpenRewrite recipe...
+Command: mvn rewrite:runNoFork -Dmaven.compiler.failOnError=false -Dmaven.test.skip=true
+
+=== STDOUT ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.cgi.demo1:demo1 >-------------------------
+[INFO] Building Demo1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- rewrite:6.44.0:runNoFork (default-cli) @ demo1 ---
+[INFO] Using active recipe(s) [com.yourcompany.UpgradeCommonsLang]
+[INFO] Using active styles(s) []
+[INFO] Validating active recipes...
+[INFO] Project [Demo1] Resolving Poms...
+[INFO] Project [Demo1] Parsing source files
+[INFO] Running recipe(s)...
+[WARNING] Changes have been made to src\main\java\demo1\Demo.java by:
+[WARNING]     org.openrewrite.apache.commons.lang.UpgradeApacheCommonsLang_2_3
+[WARNING]         org.openrewrite.java.ChangePackage: {oldPackageName=org.apache.commons.lang, newPackageName=org.apache.commons.lang3, recursive=true}
+[WARNING] Please review and commit the results.
+[WARNING] Estimate time saved: 5m
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.084 s
+[INFO] Finished at: 2026-07-18T11:39:27Z
+[INFO] ------------------------------------------------------------------------
+
+Running custom generated recipe...
+Command: mvn org.openrewrite.maven:rewrite-maven-plugin:runNoFork -Drewrite.configLocation="rewrite.yml" -Drewrite.activeRecipes="com.security.UpgradeCommonsLangToLang3" -Dmaven.compiler.failOnError=false -Dmaven.test.skip=true
+Recipe Name: com.security.UpgradeCommonsLangToLang3
+
+=== STDOUT ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.cgi.demo1:demo1 >-------------------------
+[INFO] Building Demo1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- rewrite:6.44.0:runNoFork (default-cli) @ demo1 ---
+[INFO] Using active recipe(s) [com.security.UpgradeCommonsLangToLang3]
+[INFO] Using active styles(s) []
+[INFO] Validating active recipes...
+[ERROR] Recipe validation error in com.security.UpgradeCommonsLangToLang3 for property org.openrewrite.java.dependencies.ChangeDependencyGroupIdAndArtifactId: Recipe class org.openrewrite.java.dependencies.ChangeDependencyGroupIdAndArtifactId cannot be found
+[ERROR] Recipe validation errors detected as part of one or more activeRecipe(s). Execution will continue regardless.
+[INFO] Project [Demo1] Resolving Poms...
+[INFO] Project [Demo1] Parsing source files
+[INFO] Running recipe(s)...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.915 s
+[INFO] Finished at: 2026-07-18T11:39:45Z
+[INFO] ------------------------------------------------------------------------
+
