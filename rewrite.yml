@@ -1,7 +1,18 @@
 ---
 type: specs.openrewrite.org/v1beta/recipe
-name: com.yourcompany.UpgradeCommonsLang
-displayName: Upgrade Apache Commons Lang 2 to 3
-description: Upgrades Apache Commons Lang dependency from version 2 to 3 and modifies source imports.
+name: com.org.security.MigrateCommonsLangToLang3
+displayName: Migrate from commons-lang 2.6 to commons-lang3 3.17.0
+description: Updates imports and dependencies from the vulnerable commons-lang 2.6 to commons-lang3 3.17.0.
 recipeList:
-  - org.openrewrite.apache.commons.lang.UpgradeApacheCommonsLang_2_3
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: org.apache.commons.lang
+      newPackageName: org.apache.commons.lang3
+      recursive: true
+  - org.openrewrite.maven.RemoveDependency:
+      groupId: commons-lang
+      artifactId: commons-lang
+  - org.openrewrite.maven.AddDependency:
+      groupId: org.apache.commons
+      artifactId: commons-lang3
+      version: 3.17.0
+      onlyIfReferenced: true
