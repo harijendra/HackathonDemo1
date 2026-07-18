@@ -1,0 +1,26 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.remediation.UpgradeVulnerableDependencies
+displayName: Remediate HttpClient and Commons Lang Vulnerabilities
+description: Upgrades httpclient to 4.5.13 and migrates deprecated commons-lang 2.x imports to commons-lang3.
+recipeList:
+  # 1. Upgrade httpclient to the safe 4.5.13 version
+  - org.openrewrite.maven.UpgradeDependencyVersion:
+      groupId: org.apache.httpcomponents
+      artifactId: httpclient
+      newVersion: 4.5.13
+      overrideManagedVersion: true
+
+  # 2. Change the Maven dependency coordinates from commons-lang to commons-lang3
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: commons-lang
+      oldArtifactId: commons-lang
+      newGroupId: org.apache.commons
+      newArtifactId: commons-lang3
+      newVersion: 3.12.0
+
+  # 3. Refactor code imports from org.apache.commons.lang.* to org.apache.commons.lang3.*
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: org.apache.commons.lang
+      newPackageName: org.apache.commons.lang3
+      recursive: true
