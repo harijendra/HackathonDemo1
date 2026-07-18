@@ -1,0 +1,156 @@
+=== OPENREWRITE RUN DIAGNOSTIC REPORT ===
+Date: 2026-07-18T11:04:34.900Z
+
+Running pre-configured OpenRewrite recipe...
+Command: mvn rewrite:run
+
+=== EXECUTION FAILED ===
+Error: Command failed: mvn rewrite:run
+
+
+=== STDOUT ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.cgi.demo1:demo1 >-------------------------
+[INFO] Building Demo1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> rewrite:6.44.0:run (default-cli) > process-test-classes @ demo1 >>>
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.pom
+Progress (1): 869 BProgress (1): 2.0 kBProgress (1): 4.7 kBProgress (1): 6.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.pom (6.0 kB at 15 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5-parent/5.2.1/httpclient5-parent-5.2.1.pom
+Progress (1): 838 BProgress (1): 1.9 kBProgress (1): 3.5 kBProgress (1): 8.2 kBProgress (1): 9.7 kBProgress (1): 13 kB Progress (1): 17 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5-parent/5.2.1/httpclient5-parent-5.2.1.pom (17 kB at 345 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-parent/13/httpcomponents-parent-13.pom
+Progress (1): 805 BProgress (1): 1.8 kBProgress (1): 3.5 kBProgress (1): 5.3 kBProgress (1): 6.3 kBProgress (1): 7.5 kBProgress (1): 10.0 kBProgress (1): 13 kB  Progress (1): 16 kBProgress (1): 18 kBProgress (1): 21 kBProgress (1): 23 kBProgress (1): 26 kBProgress (1): 28 kBProgress (1): 30 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-parent/13/httpcomponents-parent-13.pom (30 kB at 539 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/27/apache-27.pom
+Progress (1): 745 BProgress (1): 1.6 kBProgress (1): 3.4 kBProgress (1): 5.5 kBProgress (1): 9.0 kBProgress (1): 14 kB Progress (1): 17 kBProgress (1): 19 kBProgress (1): 20 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/27/apache-27.pom (20 kB at 463 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.1/junit-bom-5.9.1.pom
+Progress (1): 907 BProgress (1): 2.2 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.1/junit-bom-5.9.1.pom (5.6 kB at 144 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.pom
+Progress (1): 883 BProgress (1): 2.0 kBProgress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.pom (3.9 kB at 107 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-parent/5.2/httpcore5-parent-5.2.pom
+Progress (1): 843 BProgress (1): 1.9 kBProgress (1): 3.6 kBProgress (1): 6.7 kBProgress (1): 8.4 kBProgress (1): 11 kB Progress (1): 14 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-parent/5.2/httpcore5-parent-5.2.pom (14 kB at 327 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.pom
+Progress (1): 884 BProgress (1): 2.1 kBProgress (1): 3.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.pom (3.6 kB at 93 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.pom
+Progress (1): 740 BProgress (1): 1.6 kBProgress (1): 4.2 kBProgress (1): 7.8 kBProgress (1): 10 kB Progress (1): 13 kBProgress (1): 16 kBProgress (1): 17 kBProgress (1): 19 kBProgress (1): 21 kBProgress (1): 23 kBProgress (1): 27 kBProgress (1): 29 kBProgress (1): 31 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.pom (31 kB at 681 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.7.1/junit-bom-5.7.1.pom
+Progress (1): 912 BProgress (1): 2.2 kBProgress (1): 5.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.7.1/junit-bom-5.7.1.pom (5.1 kB at 124 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar
+Progress (1): 3.8/840 kBProgress (1): 8.0/840 kBProgress (1): 11/840 kB Progress (1): 16/840 kBProgress (1): 20/840 kBProgress (1): 24/840 kBProgress (1): 28/840 kBProgress (1): 33/840 kBProgress (1): 37/840 kBProgress (1): 41/840 kBProgress (1): 45/840 kBProgress (1): 49/840 kBProgress (1): 54/840 kBProgress (1): 58/840 kBProgress (1): 62/840 kBProgress (1): 66/840 kBProgress (1): 71/840 kBProgress (1): 75/840 kBProgress (1): 79/840 kBProgress (1): 83/840 kBProgress (1): 87/840 kBProgress (1): 92/840 kBProgress (1): 96/840 kBProgress (1): 100/840 kBProgress (1): 104/840 kBProgress (1): 109/840 kBProgress (1): 113/840 kBProgress (1): 117/840 kBProgress (1): 121/840 kBProgress (1): 126/840 kBProgress (1): 126/840 kBProgress (1): 130/840 kBProgress (1): 135/840 kBProgress (1): 139/840 kBProgress (1): 143/840 kBProgress (1): 147/840 kBProgress (1): 151/840 kBProgress (1): 156/840 kBProgress (1): 160/840 kBProgress (1): 164/840 kBProgress (1): 181/840 kBProgress (1): 197/840 kBProgress (1): 213/840 kBProgress (1): 230/840 kBProgress (1): 246/840 kBProgress (1): 262/840 kBProgress (1): 279/840 kBProgress (1): 295/840 kBProgress (1): 311/840 kBProgress (1): 328/840 kBProgress (1): 344/840 kBProgress (1): 360/840 kBProgress (1): 377/840 kBProgress (1): 393/840 kBProgress (1): 410/840 kBProgress (1): 426/840 kBProgress (1): 442/840 kBProgress (1): 459/840 kBProgress (1): 475/840 kBProgress (1): 492/840 kBProgress (1): 508/840 kBProgress (1): 524/840 kBProgress (1): 541/840 kBProgress (1): 557/840 kBProgress (1): 573/840 kBProgress (1): 590/840 kBProgress (1): 606/840 kBProgress (1): 623/840 kBProgress (1): 639/840 kBProgress (1): 655/840 kBProgress (1): 672/840 kBProgress (1): 688/840 kBProgress (1): 705/840 kBProgress (1): 721/840 kBProgress (1): 737/840 kBProgress (1): 754/840 kBProgress (1): 770/840 kBProgress (1): 786/840 kBProgress (1): 803/840 kBProgress (1): 819/840 kBProgress (1): 836/840 kBProgress (1): 840 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar (840 kB at 6.6 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
+Progress (1): 7.7/853 kBProgress (1): 16/853 kB Progress (1): 25/853 kBProgress (1): 41/853 kBProgress (2): 41/853 kB | 0.9/587 kBProgress (2): 41/853 kB | 2.3/587 kBProgress (2): 41/853 kB | 3.6/587 kBProgress (2): 41/853 kB | 5.0/587 kBProgress (2): 41/853 kB | 6.4/587 kBProgress (2): 41/853 kB | 7.7/587 kBProgress (2): 41/853 kB | 9.1/587 kBProgress (2): 41/853 kB | 10/587 kB Progress (2): 41/853 kB | 12/587 kBProgress (2): 41/853 kB | 13/587 kBProgress (2): 41/853 kB | 15/587 kBProgress (2): 41/853 kB | 16/587 kBProgress (2): 41/853 kB | 17/587 kBProgress (2): 41/853 kB | 19/587 kBProgress (2): 41/853 kB | 20/587 kBProgress (2): 41/853 kB | 21/587 kBProgress (2): 41/853 kB | 23/587 kBProgress (2): 41/853 kB | 24/587 kBProgress (2): 41/853 kB | 25/587 kBProgress (2): 41/853 kB | 27/587 kBProgress (2): 41/853 kB | 28/587 kBProgress (2): 41/853 kB | 30/587 kBProgress (2): 41/853 kB | 31/587 kBProgress (2): 41/853 kB | 32/587 kBProgress (2): 41/853 kB | 34/587 kBProgress (2): 41/853 kB | 35/587 kBProgress (2): 41/853 kB | 36/587 kBProgress (2): 41/853 kB | 38/587 kBProgress (2): 41/853 kB | 39/587 kBProgress (2): 41/853 kB | 41/587 kBProgress (2): 41/853 kB | 42/587 kBProgress (2): 41/853 kB | 43/587 kBProgress (2): 41/853 kB | 45/587 kBProgress (2): 41/853 kB | 46/587 kBProgress (2): 41/853 kB | 47/587 kBProgress (2): 41/853 kB | 49/587 kBProgress (2): 41/853 kB | 50/587 kBProgress (2): 41/853 kB | 51/587 kBProgress (2): 41/853 kB | 53/587 kBProgress (2): 41/853 kB | 54/587 kBProgress (3): 41/853 kB | 54/587 kB | 0.9/237 kBProgress (3): 41/853 kB | 54/587 kB | 2.3/237 kBProgress (3): 41/853 kB | 54/587 kB | 3.6/237 kBProgress (3): 41/853 kB | 56/587 kB | 3.6/237 kBProgress (3): 41/853 kB | 56/587 kB | 5.0/237 kBProgress (3): 41/853 kB | 56/587 kB | 6.4/237 kBProgress (3): 41/853 kB | 56/587 kB | 7.7/237 kBProgress (3): 41/853 kB | 56/587 kB | 9.1/237 kBProgress (3): 41/853 kB | 60/587 kB | 9.1/237 kBProgress (3): 41/853 kB | 60/587 kB | 10/237 kB Progress (3): 41/853 kB | 60/587 kB | 12/237 kBProgress (3): 41/853 kB | 64/587 kB | 12/237 kBProgress (3): 41/853 kB | 64/587 kB | 13/237 kBProgress (3): 41/853 kB | 64/587 kB | 15/237 kBProgress (3): 41/853 kB | 68/587 kB | 15/237 kBProgress (3): 41/853 kB | 68/587 kB | 16/237 kBProgress (3): 41/853 kB | 68/587 kB | 17/237 kBProgress (3): 41/853 kB | 73/587 kB | 17/237 kBProgress (3): 41/853 kB | 73/587 kB | 19/237 kBProgress (3): 41/853 kB | 73/587 kB | 20/237 kBProgress (3): 41/853 kB | 77/587 kB | 20/237 kBProgress (3): 41/853 kB | 77/587 kB | 21/237 kBProgress (3): 41/853 kB | 81/587 kB | 21/237 kBProgress (3): 41/853 kB | 81/587 kB | 23/237 kBProgress (3): 41/853 kB | 81/587 kB | 24/237 kBProgress (3): 41/853 kB | 85/587 kB | 24/237 kBProgress (3): 41/853 kB | 85/587 kB | 26/237 kBProgress (3): 41/853 kB | 85/587 kB | 27/237 kBProgress (3): 41/853 kB | 89/587 kB | 27/237 kBProgress (3): 41/853 kB | 89/587 kB | 28/237 kBProgress (3): 41/853 kB | 94/587 kB | 28/237 kBProgress (3): 41/853 kB | 94/587 kB | 29/237 kBProgress (3): 41/853 kB | 94/587 kB | 30/237 kBProgress (3): 41/853 kB | 98/587 kB | 30/237 kBProgress (3): 41/853 kB | 98/587 kB | 32/237 kBProgress (3): 41/853 kB | 98/587 kB | 33/237 kBProgress (3): 41/853 kB | 102/587 kB | 33/237 kBProgress (3): 41/853 kB | 102/587 kB | 35/237 kBProgress (3): 41/853 kB | 106/587 kB | 35/237 kBProgress (3): 41/853 kB | 106/587 kB | 36/237 kBProgress (3): 41/853 kB | 106/587 kB | 37/237 kBProgress (3): 41/853 kB | 111/587 kB | 37/237 kBProgress (3): 41/853 kB | 111/587 kB | 39/237 kBProgress (3): 41/853 kB | 111/587 kB | 40/237 kBProgress (3): 41/853 kB | 111/587 kB | 41/237 kBProgress (3): 41/853 kB | 111/587 kB | 43/237 kBProgress (3): 41/853 kB | 111/587 kB | 44/237 kBProgress (3): 41/853 kB | 111/587 kB | 46/237 kBProgress (3): 41/853 kB | 115/587 kB | 46/237 kBProgress (3): 41/853 kB | 115/587 kB | 47/237 kBProgress (3): 41/853 kB | 119/587 kB | 47/237 kBProgress (3): 41/853 kB | 119/587 kB | 48/237 kBProgress (3): 41/853 kB | 119/587 kB | 50/237 kBProgress (3): 41/853 kB | 123/587 kB | 50/237 kBProgress (3): 41/853 kB | 123/587 kB | 51/237 kBProgress (3): 41/853 kB | 123/587 kB | 52/237 kBProgress (3): 41/853 kB | 127/587 kB | 52/237 kBProgress (3): 41/853 kB | 127/587 kB | 54/237 kBProgress (3): 41/853 kB | 127/587 kB | 55/237 kBProgress (3): 41/853 kB | 132/587 kB | 55/237 kBProgress (3): 41/853 kB | 136/587 kB | 55/237 kBProgress (3): 41/853 kB | 136/587 kB | 59/237 kBProgress (3): 41/853 kB | 140/587 kB | 59/237 kBProgress (3): 41/853 kB | 140/587 kB | 64/237 kBProgress (3): 41/853 kB | 144/587 kB | 64/237 kBProgress (3): 41/853 kB | 144/587 kB | 68/237 kBProgress (3): 41/853 kB | 149/587 kB | 68/237 kBProgress (3): 41/853 kB | 149/587 kB | 72/237 kBProgress (3): 41/853 kB | 153/587 kB | 72/237 kBProgress (3): 41/853 kB | 153/587 kB | 76/237 kBProgress (3): 41/853 kB | 155/587 kB | 76/237 kBProgress (3): 41/853 kB | 155/587 kB | 81/237 kBProgress (3): 41/853 kB | 159/587 kB | 81/237 kBProgress (3): 41/853 kB | 159/587 kB | 85/237 kBProgress (3): 41/853 kB | 164/587 kB | 85/237 kBProgress (3): 41/853 kB | 164/587 kB | 89/237 kBProgress (3): 41/853 kB | 168/587 kB | 89/237 kBProgress (3): 41/853 kB | 172/587 kB | 89/237 kBProgress (3): 41/853 kB | 172/587 kB | 93/237 kBProgress (3): 41/853 kB | 172/587 kB | 97/237 kBProgress (3): 41/853 kB | 176/587 kB | 97/237 kBProgress (3): 41/853 kB | 181/587 kB | 97/237 kBProgress (3): 41/853 kB | 181/587 kB | 102/237 kBProgress (3): 41/853 kB | 185/587 kB | 102/237 kBProgress (3): 41/853 kB | 185/587 kB | 106/237 kBProgress (3): 41/853 kB | 189/587 kB | 106/237 kBProgress (3): 41/853 kB | 189/587 kB | 110/237 kBProgress (3): 41/853 kB | 193/587 kB | 110/237 kBProgress (3): 41/853 kB | 193/587 kB | 114/237 kBProgress (3): 41/853 kB | 197/587 kB | 114/237 kBProgress (3): 41/853 kB | 197/587 kB | 119/237 kBProgress (3): 41/853 kB | 202/587 kB | 119/237 kBProgress (3): 41/853 kB | 202/587 kB | 123/237 kBProgress (3): 41/853 kB | 206/587 kB | 123/237 kBProgress (3): 41/853 kB | 206/587 kB | 127/237 kBProgress (3): 41/853 kB | 210/587 kB | 127/237 kBProgress (3): 41/853 kB | 210/587 kB | 131/237 kBProgress (3): 41/853 kB | 214/587 kB | 131/237 kBProgress (3): 41/853 kB | 214/587 kB | 135/237 kBProgress (3): 41/853 kB | 219/587 kB | 135/237 kBProgress (3): 41/853 kB | 219/587 kB | 140/237 kBProgress (3): 41/853 kB | 223/587 kB | 140/237 kBProgress (3): 41/853 kB | 223/587 kB | 144/237 kBProgress (3): 41/853 kB | 223/587 kB | 148/237 kBProgress (3): 41/853 kB | 223/587 kB | 152/237 kBProgress (3): 41/853 kB | 239/587 kB | 152/237 kBProgress (3): 41/853 kB | 239/587 kB | 157/237 kBProgress (3): 41/853 kB | 239/587 kB | 159/237 kBProgress (3): 41/853 kB | 256/587 kB | 159/237 kBProgress (3): 41/853 kB | 256/587 kB | 163/237 kBProgress (3): 41/853 kB | 256/587 kB | 167/237 kBProgress (3): 41/853 kB | 266/587 kB | 167/237 kBProgress (3): 41/853 kB | 266/587 kB | 172/237 kBProgress (3): 41/853 kB | 266/587 kB | 176/237 kBProgress (3): 41/853 kB | 272/587 kB | 176/237 kBProgress (3): 41/853 kB | 272/587 kB | 180/237 kBProgress (3): 41/853 kB | 272/587 kB | 184/237 kBProgress (3): 41/853 kB | 288/587 kB | 184/237 kBProgress (3): 41/853 kB | 288/587 kB | 188/237 kBProgress (3): 41/853 kB | 288/587 kB | 193/237 kBProgress (3): 41/853 kB | 288/587 kB | 197/237 kBProgress (3): 41/853 kB | 305/587 kB | 197/237 kBProgress (3): 41/853 kB | 305/587 kB | 201/237 kBProgress (3): 41/853 kB | 305/587 kB | 205/237 kBProgress (3): 41/853 kB | 305/587 kB | 210/237 kBProgress (3): 41/853 kB | 321/587 kB | 210/237 kBProgress (3): 41/853 kB | 321/587 kB | 214/237 kBProgress (3): 41/853 kB | 321/587 kB | 218/237 kBProgress (3): 41/853 kB | 321/587 kB | 222/237 kBProgress (3): 41/853 kB | 338/587 kB | 222/237 kBProgress (3): 41/853 kB | 338/587 kB | 237 kB    Progress (3): 41/853 kB | 354/587 kB | 237 kBProgress (3): 41/853 kB | 370/587 kB | 237 kBProgress (3): 41/853 kB | 387/587 kB | 237 kBProgress (3): 41/853 kB | 397/587 kB | 237 kBProgress (3): 41/853 kB | 413/587 kB | 237 kBProgress (3): 41/853 kB | 430/587 kB | 237 kBProgress (3): 41/853 kB | 446/587 kB | 237 kBProgress (3): 41/853 kB | 463/587 kB | 237 kBProgress (3): 41/853 kB | 479/587 kB | 237 kBProgress (3): 41/853 kB | 495/587 kB | 237 kBProgress (3): 41/853 kB | 512/587 kB | 237 kBProgress (3): 41/853 kB | 528/587 kB | 237 kBProgress (3): 41/853 kB | 544/587 kB | 237 kBProgress (3): 41/853 kB | 561/587 kB | 237 kBProgress (3): 41/853 kB | 577/587 kB | 237 kBProgress (3): 41/853 kB | 587 kB | 237 kB    Progress (3): 57/853 kB | 587 kB | 237 kBProgress (3): 74/853 kB | 587 kB | 237 kBProgress (3): 90/853 kB | 587 kB | 237 kBProgress (3): 106/853 kB | 587 kB | 237 kB                                          Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar (587 kB at 4.5 MB/s)
+Progress (2): 123/853 kB | 237 kBProgress (2): 139/853 kB | 237 kBProgress (2): 156/853 kB | 237 kBProgress (2): 172/853 kB | 237 kBProgress (2): 188/853 kB | 237 kBProgress (2): 205/853 kB | 237 kBProgress (2): 221/853 kB | 237 kBProgress (2): 238/853 kB | 237 kBProgress (2): 254/853 kB | 237 kBProgress (2): 270/853 kB | 237 kBProgress (2): 287/853 kB | 237 kBProgress (2): 303/853 kB | 237 kBProgress (2): 319/853 kB | 237 kBProgress (2): 336/853 kB | 237 kBProgress (2): 342/853 kB | 237 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar (237 kB at 1.6 MB/s)
+Progress (1): 359/853 kBProgress (1): 375/853 kBProgress (1): 391/853 kBProgress (1): 408/853 kBProgress (1): 424/853 kBProgress (1): 440/853 kBProgress (1): 452/853 kBProgress (1): 468/853 kBProgress (1): 485/853 kBProgress (1): 501/853 kBProgress (1): 517/853 kBProgress (1): 534/853 kBProgress (1): 550/853 kBProgress (1): 566/853 kBProgress (1): 583/853 kBProgress (1): 599/853 kBProgress (1): 616/853 kBProgress (1): 632/853 kBProgress (1): 648/853 kBProgress (1): 665/853 kBProgress (1): 671/853 kBProgress (1): 687/853 kBProgress (1): 704/853 kBProgress (1): 720/853 kBProgress (1): 737/853 kBProgress (1): 753/853 kBProgress (1): 769/853 kBProgress (1): 786/853 kBProgress (1): 802/853 kBProgress (1): 818/853 kBProgress (1): 835/853 kBProgress (1): 851/853 kBProgress (1): 853 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar (853 kB at 4.0 MB/s)
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ demo1 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\HACKAT~1\AppData\Local\Temp\2\pr-clone-Vwv3qW\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ demo1 ---
+[INFO] Recompiling the module because of changed dependency.
+[WARNING] File encoding has not been set, using platform encoding windows-1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target\classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] 1 warning
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-Vwv3qW/src/main/java/demo1/Demo.java:[3,31] package org.apache.commons.lang does not exist
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-Vwv3qW/src/main/java/demo1/Demo.java:[10,13] cannot find symbol
+  symbol:   variable StringUtils
+  location: class demo1.Demo
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.491 s
+[INFO] Finished at: 2026-07-18T11:04:40Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile (default-compile) on project demo1: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-Vwv3qW/src/main/java/demo1/Demo.java:[3,31] package org.apache.commons.lang does not exist
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-Vwv3qW/src/main/java/demo1/Demo.java:[10,13] cannot find symbol
+[ERROR]   symbol:   variable StringUtils
+[ERROR]   location: class demo1.Demo
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+
+=== STDERR ===
+
+Running custom generated recipe...
+Command: mvn org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.configLocation="rewrite.yml" -Drewrite.activeRecipes="com.remediation.UpgradeSecurityDependencies"
+Recipe Name: com.remediation.UpgradeSecurityDependencies
+
+=== EXECUTION FAILED ===
+Error: Command failed: mvn org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.configLocation="rewrite.yml" -Drewrite.activeRecipes="com.remediation.UpgradeSecurityDependencies"
+
+
+=== STDOUT ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.cgi.demo1:demo1 >-------------------------
+[INFO] Building Demo1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> rewrite:6.44.0:run (default-cli) > process-test-classes @ demo1 >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ demo1 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\HACKAT~1\AppData\Local\Temp\2\pr-clone-Vwv3qW\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ demo1 ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding windows-1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target\classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] 1 warning
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-Vwv3qW/src/main/java/demo1/Demo.java:[3,31] package org.apache.commons.lang does not exist
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-Vwv3qW/src/main/java/demo1/Demo.java:[10,13] cannot find symbol
+  symbol:   variable StringUtils
+  location: class demo1.Demo
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.953 s
+[INFO] Finished at: 2026-07-18T11:04:45Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile (default-compile) on project demo1: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-Vwv3qW/src/main/java/demo1/Demo.java:[3,31] package org.apache.commons.lang does not exist
+[ERROR] /C:/Users/HACKAT~1/AppData/Local/Temp/2/pr-clone-Vwv3qW/src/main/java/demo1/Demo.java:[10,13] cannot find symbol
+[ERROR]   symbol:   variable StringUtils
+[ERROR]   location: class demo1.Demo
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+
+=== STDERR ===
+
