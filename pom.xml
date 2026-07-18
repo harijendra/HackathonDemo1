@@ -4,12 +4,23 @@
   <artifactId>demo1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Demo1</name>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.20.0</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   <dependencies>
 
-   <groupId>commons-lang</groupId>
-    <artifactId>commons-lang</artifactId>
-    <version>2.6</version>
-    <scope>compile</scope>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.14.0</version>
+      <scope>compile</scope>
+    </dependency>
 <!-- Source: https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 
 	</dependencies>
